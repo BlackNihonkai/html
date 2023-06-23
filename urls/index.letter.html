@@ -1,0 +1,250 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>文字のタグ</title>
+</head>
+<body bgcolor="#FEC7AD">
+<body alink="#ff0000" vlink="#3300cc">
+
+<font face="851手書き雑フォント">
+<!--
+<p><h1>
+<font color="red">
+<div align="center">
+<font face="MS p明朝">文字に修飾をつける</font></font>
+</h1></p>
+-->
+
+<p><table border="7" bordercolor="#0000aa">
+<tr><td>
+<h2><font color="#da00FF">
+<b><font face="MS p明朝">文字を修飾する</font></b>
+</font></h2>
+</td></tr></table>
+</p>
+
+<p><h3>
+<font color="green">
+<em>文字に色をつける</em>
+</font></h3>
+「font」の後ろに、「color="カラーコード"」をつけることで、文字に色を付けることができる。
+<u>色の指定に使うカラーコードは、参考ページやインターネットで調べる。</u>
+<br>
+<br>
+<font color="#ff0000">&lt;font color="#ff0000"&gt;文字&lt;/fomt&gt;</font>
+<br>
+<font color="#3300cc">&lt;font color="#3300cc"&gt;文字&lt;/fomt&gt;</font>
+<br>
+<font color="#cc0099">&lt;font color="#cc0099"&gt;文字&lt;/fomt&gt;</font>
+</p>
+
+<!-- -->
+<br>
+<p><h3>
+<font color="green">
+<em>文字の大きさを変える</em>
+</font></h3>
+「font」の後ろに、「size="サイズ"」をつけることで、文字の大きさを自由に設定できる。
+<br>
+<br>
+<font size="1">&lt;font size="1"&gt;文字&lt;/font&gt;</font>
+<br>
+<font size="2">&lt;font size="2"&gt;文字&lt;/font&gt;</font>
+<br>
+<font size="3">&lt;font size="3"&gt;文字&lt;/font&gt;</font>
+<br>
+<font size="4">&lt;font size="4"&gt;文字&lt;/font&gt;</font>
+<br>
+
+<br>
+文字の大きさをピクセルで指定することもできる。
+<u>この場合は、「font」ではなく、「div」を使う。</u>
+「div」の後ろに「style="font-size:ピクセル数;"」と書くことで指定したピクセル数の文字を出力できる。
+<br>
+<br>
+<div style="font-size:8px;">&lt;div style=&quot;font-size:8px;&quot;&gt;この文字サイズは8ピクセルです&lt;/div&gt;</div>
+<br>
+<div style="font-size:30px;">&lt;div style=&quot;font-size:30px;&quot;&gt;この文字サイズは30ピクセルです&lt;/div&gt;</div>
+</p>
+
+<!-- -->
+<br>
+<p><h3>
+<font color="green">
+<em>文字を太くする</em>
+</font></h3>
+太字にしたい部分に、「<b>strong</b>」か「<b>b</b>」をつけることで、太字にすることができる。
+<br>
+<br>
+これは元の大きさの「文字」。
+<br>
+<strong>&lt;strong&gt;文字&lt;/strong&gt;</strong>
+<br>
+<b>&lt;b&gt;文字&lt;/b&gt;</b>
+</p>
+
+<!-- -->
+<br>
+<p><h3>
+<font color="green">
+<em>文字を斜めにする(italic)</em>
+</font></h3>
+斜め文字にしたい部分に、「<b><i>em</i></b>」「<b><i>i</i></b>」をつけることで、斜め文字にすることができる。
+<br>
+<br>
+これは斜めになっていない「文字」。
+<br>
+<em>&lt;em&gt;日本語は斜めにならないかも&lt;/em&gt;</em>
+<br>
+<i>&lt;i&gt;This is English.&lt;/i&gt;</i>
+</p>
+
+<!-- -->
+<br>
+<p><h3>
+<font color="green">
+<em>文字に下線をつける</em>
+</font></h3>
+下線をつけたい部分に、「<b><u>u</u></b>」をつけることで、下線をつけることができる。
+<br>
+<br>
+これは下線のついていない「文字」。
+<br>
+<u>&lt;u&gt;文字&lt;/u&gt;</u>
+</p>
+
+
+<!-- -->
+<br>
+<p><h3>
+<font color="green">
+<em>文字に取り消し線をつける</em>
+</font></h3>
+取り消し線をつけたい部分に、「<b>s</b>」をつけることで、取り消し線をつけることができる。
+<br>
+<br>
+これは取り消し線のついていない「文字」。
+<br>
+<s>&lt;s&gt;文字&lt;/s&gt;</s>
+</p>
+
+<!-- -->
+<br>
+<p><h3>
+<font color="green">
+<em>文字の背景に色をつける</em>
+</font></h3>
+「font」の後ろに、「style="backgroud-color:カラーコード;"」をつけることで、文字の背景に色を付けることができる。
+<u>色の指定に使うカラーコードは、参考ページやインターネットで調べる。</u>
+<br>
+<br>
+これは背景に色がついていない「文字」。
+<br>
+<font style="background-color:#ffff00;">&lt;font style="background-color:#ffff00;"&gt;文字&lt;/font&gt;</font>
+</p>
+
+<!-- -->
+<br>
+<p><h3>
+<font color="green">
+<em>文字の書体を指定する</em>
+</font></h3>
+「font」の後ろに、「face="フォントの名前"」をつけることで文字の書体を指定することができる。
+<u>フォントの名前はインターネットで調べる。</u>
+<br>
+<br>
+<font face="ＭＳ Ｐ明朝">&lt;font face="ＭＳ Ｐ明朝"&gt;MS P明朝&lt;/font&gt;</font>
+<br>
+<font face="Impact">&lt;font face="Impact"&gt;Impact&lt;/font&gt;</font>
+<br>
+<font face="sans-serif">&lt;font face="sans-serif"&gt;sans-serif&lt;/font&gt;</font>
+</p>
+
+<!-- -->
+<br>
+<p><h3>
+<font color="green">
+<em>文字の位置を指定する</em>
+</font></h3>
+文字の位置を指定したい部分を囲んでいるタグの中に、「align="位置"」を書くことで、文字の位置を指定できる。
+位置指定は、「left」「center」「right」。
+<br>
+<p align="left">&lt;p align="left"&gt;左詰め&lt;/p&gt;</p>
+<p align="center">&lt;p align="center"&gt;中央揃え&lt;/p&gt;</p>
+<p align="right">&lt;p align="right"&gt;右詰め&lt;/p&gt;</p>
+<br>
+以下のタグのように、「p」以外のタグでも同じように位置指定できる。
+<br>
+<div align="left">&lt;div align="left"&gt;左詰め&lt;/div&gt;</div>
+<div align="center">&lt;div align="center"&gt;中央揃え&lt;/div&gt;</div>
+<div align="right">&lt;div align="right"&gt;右詰め&lt;/div&gt;</div>
+</p>
+
+
+<!-- -->
+<br>
+<p><h3>
+<font color="green">
+<em>いろいろ組み合わせてみる</em>
+</font></h3>
+上記の一つ一つを組み合わせることで、様々な形を作ることができる。
+
+<p>
+<u>文字の大きさを指定して色をつける</u>
+<br>
+<font size="5" color="#3300cc">&lt;font size="5" color="#3300cc"&gt;文字&lt;/font&gt;</font>
+</p>
+
+<p>
+<u>文字サイズ指定・フォント種類指定・文字色指定・太字・中央揃え</u>
+<br>
+<p align="center"><font face="verdana" size="5" color="#3300cc"><b>
+&lt;p align="center"&gt;&lt;font face="verdana" size="5" color="#3300cc"&gt;&lt;b&gt;文字&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;
+</b></font></p>
+</p>
+
+<p>
+<u>文字を中央揃えで並べる</u>
+<br>
+<table border="0" align="center">
+<tr>
+<td>
+&lt;table border="0" align="center"&gt;<br>
+&lt;tr&gt;<br>
+&lt;td&gt;あいうえおかきくけこ&lt;br&gt;<br>
+さしすせそ&lt;br&gt;<br>
+たちつてと&lt;br&gt;<br>
+なにぬねのはひふへほ<br>
+&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;/table&gt;
+</td>
+</tr>
+</table>
+</p>
+
+</p>
+
+
+
+
+<p><table border="5" bordercolor="#66ffff">
+<tr><td><h1>
+<a href="../index.html">
+<font face="MS p明朝">ホーム</font>
+</h1></td></tr></table></a>
+<br>
+</p>
+
+<!--
+<p>
+<marquee behavior="alternate" width="100%" scrollamount="5"></p>
+<table border="0" align="right"><tr><td>
+1枚目：自分で撮った写真。
+<br>
+２枚目：自分で撮った写真。一部加工。
+</td></tr></table></p>
+-->
+
+</font>
+</html>

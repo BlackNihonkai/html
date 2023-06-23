@@ -1,0 +1,314 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>表を書く</title>
+</head>
+<body bgcolor="#FEC7AD">
+<body alink="#ff0000" vlink="#3300cc">
+
+<font face="851手書き雑フォント">
+
+<a name="タイトル">
+<p><div align="center">
+<table border="7" bordercolor="#0000aa">
+<tr><td>
+<h2><font color="#da00FF">
+<font face="MS p明朝"><b>Tableタグ</b></font>
+</font></h2>
+</td></tr></table></div>
+</p>
+
+<!-- -->
+<p><h3>
+<font color="green">
+<div align="center"><em>挿入場所</em></div>
+</font></h3>
+「&lt;body&gt;」と「&lt;/body&gt;」の間に<b>テーブルのソース</b>を書く。<br>
+<u>テーブルタグの詳細は次項以降をよく見る。</u>
+</p>
+
+<!-- -->
+<br>
+<p><h3>
+<div align="center"><font color="green">
+<em>テーブルタグ</em></div>
+</font></h3>
+
+<div align="center"><b><u>基礎的な表</u></b></div>
+<br>
+まずは、表を描くために「&lt;table&gt;」と「&lt;/table&gt;」を書く。<br>
+「&lt;tr&gt;」と「&lt;/tr&gt;」で囲まれた部分が<b>行</b>、
+その内側において「&lt;td&gt;」と「&lt;/td&gt;」で囲まれた部分が<b>列</b>になる。<br>
+「&lt;table border="数値"&gt;」の数値を大きくすることで、表の線を太くすることができる。
+<br><br>
+&lt;table border="1"&gt;
+&lt;tr&gt;
+&lt;td&gt;あいうえお &lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+<br>
+<table border="1">
+<tr>
+<td> あいうえお </td>
+</tr>
+</table>
+<br>
+&lt;table border="5"&gt;
+&lt;tr&gt;
+&lt;td&gt;あいうえお &lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+<br>
+<table border="5">
+<tr>
+<td> あいうえお </td>
+</tr>
+</table>
+<br>
+<br>
+
+<div align="center"><b><u>列を増やす</u></b></div>
+<br>
+「&lt;td&gt;~&lt;/td&gt;」を増やすことで、<b>横に列</b>が増えていく。
+<br><br>
+&lt;table border="1"&gt;<br>
+&lt;tr&gt;<br>
+&lt;td&gt;あいうえお &lt;/td&gt;<br>
+&lt;td&gt;あいうえお &lt;/td&gt;<br>
+&lt;td&gt;あいうえお &lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;/table&gt;
+<br>
+<table border="1">
+<tr>
+<td> あいうえお </td>
+<td> あいうえお </td>
+<td> あいうえお </td>
+</tr>
+</table>
+<br>
+<br>
+
+<div align="center"><b><u>列を増やす</u></b></div>
+<br>
+「&lt;tr&gt;~&lt;/tr&gt;」を増やすことで、<b>縦に行</b>が増えていく。
+<br><br>
+&lt;table border="1"&gt;<br>
+&lt;tr&gt;&lt;td&gt;あいうえお &lt;/td&gt;&lt;/tr&gt;<br>
+&lt;tr&gt;&lt;td&gt;あいうえお &lt;/td&gt;&lt;/tr&gt;<br>
+&lt;tr&gt;&lt;td&gt;あいうえお &lt;/td&gt;&lt;/tr&gt;<br>
+&lt;/table&gt;<br>
+<br>
+<table border="1">
+<tr><td> あいうえお </td></tr>
+<tr><td> あいうえお </td></tr>
+<tr><td> あいうえお </td></tr>
+</table>
+<br>
+<br>
+<br>
+
+<!-- -->
+<p><h3>
+<font color="green">
+<div align="center"><em>セルの結合</em></div>
+</font></h3>
+
+<div align="center"><b><u>縦方向のセルを結合</u></b></div>
+<br>
+「&lt;td&gt;」の中に「rowspan="数値"」を入れることで、
+縦方向のセルを結合した表が作れる。
+<br>
+<br>
+
+&lt;table border="1"&gt;<br>
+&lt;tr&gt;<br>
+&lt;td rowspan="3" align="center"&gt;
+&lt;u&gt;縦方向に&lt;br&gt;結合した&lt;br&gt;セル&lt;/u&gt;&lt;/td&gt;<br>
+&lt;td&gt;内容1&lt;/td&gt;
+&lt;/tr&gt;<br>
+&lt;tr&gt;
+&lt;td&gt;内容2&lt;/td&gt;
+&lt;/tr&gt;<br>
+&lt;tr&gt;
+&lt;td&gt;内容3&lt;/td&gt;
+&lt;/tr&gt;<br>
+&lt;/table&gt;<br>
+<br>
+<table border="1">
+<tr>
+<td rowspan="3" align="center"><u>縦方向に<br>結合した<br>セル</u></td>
+<td>内容1</td>
+</tr>
+<tr>
+<td>内容2</td>
+</tr>
+<tr>
+<td>内容3</td>
+</tr>
+</table>
+
+<br>
+<br>
+<div align="center"><b><u>横方向のセルを結合</u></b></div>
+<br>
+「&lt;td&gt;」の中に「colspan="数値"」を入れることで、
+横方向のセルを結合した表が作れる。
+<br>
+<br>
+
+&lt;table border="1"&gt;<br>
+&lt;tr&gt;<br>
+&lt;td colspan="3" align="center"&gt;内容&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr&gt;<br>
+&lt;td valign="top"&gt;内容&lt;/td&gt;<br>
+&lt;td valign="top"&gt;内容&lt;/td&gt;<br>
+&lt;td valign="top"&gt;内容&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr&gt;<br>
+&lt;td colspan="3" align="center"&gt;内容&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;/table&gt;<br>
+<br>
+<table border="1">
+<tr>
+<td colspan="3" align="center">内容</td>
+</tr>
+<tr>
+<td valign="top">内容</td>
+<td valign="top">内容</td>
+<td valign="top">内容</td>
+</tr>
+<tr>
+<td colspan="3" align="center">内容</td>
+</tr>
+</table>
+<br>
+<br>
+
+<!-- -->
+<p><h3>
+<font color="green">
+<div align="center"><em>セルの結合</em></div>
+</font></h3>
+<br>
+
+<div align="center"><b><u>外枠の色をつける</u></b></div>
+<br>
+「table」タグ内に「bordercolor="色"」を書くことで、外枠の色を指定できる。
+<br>
+<br>
+&lt;table border="3" bordercolor="#66ffff"&gt;<br>
+&lt;tr&gt;&lt;td&gt;
+あいうえお&lt;br&gt;かきくけこ&lt;br&gt;さしすせそ
+&lt;/td&gt;&lt;/tr&gt;<br>
+&lt;/table&gt;<br>
+<br>
+<table border="3" bordercolor="#66ffff">
+<tr><td>あいうえお<br>かきくけこ<br>さしすせそ</td></tr>
+</table>
+
+<div align="center"><b><u>表の中に色をつける</u></b></div>
+<br>
+「table」タグ内に「bgcolor="色"」を書くことで、外枠の色を指定できる。
+また「background="画像ファイル"」と書くことで、表の内側の背景に画像を指定できる。
+<br>
+<br>
+&lt;table border="1" bgcolor="#ccffff"&gt;<br>
+&lt;tr&gt;&lt;td&gt;<br>
+あいうえお&lt;br&gt;かきくけこ&lt;br&gt;さしすせそ<br>
+&lt;/td&gt;&lt;/tr&gt;<br>
+&lt;/table&gt;<br>
+<br>
+<table border="1" bgcolor="#ccffff">
+<tr><td>あいうえお<br>かきくけこ<br>さしすせそ</td></tr>
+</table>
+<br>
+<br>
+以下の表には背景に画像付けてみたが、ちゃんと出力されていない......。
+<br>
+&lt;table border="1" background="./Image.jpg"&gt;<br>
+&lt;tr&gt;&lt;td&gt;<br>
+あいうえお&lt;br&gt;かきくけこ&lt;br&gt;さしすせそ<br>
+&lt;/td&gt;&lt;/tr&gt;<br>
+&lt;/table&gt;<br>
+<br>
+<table border="1" background="./Image.jpg">
+<tr><td>あいうえお<br>かきくけこ<br>さしすせそ</td></tr>
+</table>
+
+
+<!-- -->
+<p><h3>
+<font color="green">
+<div align="center"><em>マージンを指定</em></div>
+</font></h3>
+<br>
+
+<div align="center"><b><u>cellpadding</u></b></div>
+<br>
+「table」タグ内に「cellpadding="数値"」を書くことで、マージンの大きさを指定できる。
+<br>
+<br>
+&lt;table border="1" align="center" cellpadding="3"&gt;<br>
+&lt;tr&gt;&lt;td&gt; あいうえお &lt;/td&gt;&lt;/tr&gt;<br>
+&lt;/table&gt;
+<br>
+<table border="1" align="center" cellpadding="3">
+<tr><td> あいうえお </td></tr>
+</table>
+<br><br>
+&lt;table border="1" align="center" cellpadding="30"&gt;<br>
+&lt;tr&gt;&lt;td&gt; あいうえお &lt;/td&gt;&lt;/tr&gt;<br>
+&lt;/table&gt;
+<br>
+<table border="1" align="center" cellpadding="30">
+<tr><td> あいうえお </td></tr>
+</table>
+<br><br>
+
+<div align="center"><b><u>widthとheight</u></b></div>
+<br>
+「table」タグ内に「width="数値" height="数値"」を書くことでも、マージンの大きさを指定できる。
+<br><br>
+&lt;table border="1" align="center" width="90%"&gt;<br>
+&lt;tr&lt;&gt;td&gt; あいうえお &lt;/td&gt;&lt;/tr&gt;<br>
+&lt;/table&gt;
+<br>
+<table border="1" align="center" width="90%">
+<tr><td> あいうえお </td></tr>
+</table>
+<br>
+<br>
+&lt;table border="1" align="center" width="150" height="100"&gt;
+&lt;tr&gt;&lt;td&gt; あいうえお &lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+<br>
+<table border="1" align="center" width="150" height="100">
+<tr><td> あいうえお </td></tr>
+</table>
+
+<br><br></p>
+
+
+<p><table border="5" bordercolor="#66ffff">
+<tr><td><h1>
+<a href="../index.html">
+<font face="MS p明朝">ホーム</font>
+</h1></td></tr></table></a>
+<br>
+</p>
+
+<!--
+<p>
+<marquee behavior="alternate" width="100%" scrollamount="5"></p>
+<table border="0" align="right"><tr><td>
+1枚目：自分で撮った写真。
+<br>
+２枚目：自分で撮った写真。一部加工。
+</td></tr></table></p>
+-->
+
+</font>
+</html>

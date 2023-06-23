@@ -1,0 +1,123 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>リンクの指定</title>
+</head>
+<body bgcolor="#FEC7AD">
+<body alink="#ff0000" vlink="#3300cc">
+
+<font face="851手書き雑フォント">
+<!--
+<p><h1>
+<font color="red">
+<div align="center">
+<font face="MS p明朝">文字に修飾をつける</font></font>
+</h1></p>
+-->
+<a name="タイトル">
+<p><table border="7" bordercolor="#0000aa">
+<tr><td>
+<h2><font color="#da00FF">
+<b><font face="MS p明朝">リンクの指定</font></b>
+</font></h2>
+</td></tr></table>
+</p>
+
+<p><h3>
+<font color="green">
+<em>リンクの色を指定する</em>
+</font></h3>
+「&lt;body 各種色指定&gt;」と「&lt;/body&gt;」の間に<b>リンクの指定指示</b>を書く。<br>
+<u>リンクの指定は次項以降をよく見る。</u>
+<br>
+以下の表を参考に色を指定していく。
+<br>
+
+<table border="1">
+<tr><td>bgcolor="色"</td><td>背景色を指定</td></tr>
+<tr><td>text="色"</td><td>文字色を指定</td></tr>
+<tr><td>link="色"</td><td>通常のリンク文字の色</td></tr>
+<tr><td>alink="色"</td><td>マウスでクリックした後のリンクの文字色</td></tr>
+<tr><td>vlink="色"</td><td>訪問済みのリンクの文字色</td></tr>
+</table>
+</p>
+
+<!-- -->
+<br>
+<p><h3>
+<font color="green">
+<em>リンク</em>
+</font></h3>
+
+<b><u>文字をリンクにする</u></b>
+<br>
+文字をクリックすると、別のページに飛ぶ。
+<br><br>
+&lt;a href="リンク先のアドレス"&gt;<a href="./sample.html">サンプルページ</a>&lt;/a&gt;
+<br>
+<br>
+<br>
+
+<b><u>画像をリンクにする</u></b>
+<br>
+画像をクリックすると、別のページに飛ぶ。
+<br><br>
+&lt;a href="リンク先のアドレス"&gt;&lt;img src="画像ファイルのパス" border="0"&gt;&lt;/a&gt;
+<br>
+<a href="./sample.html"><img src="./Image.jpg" border="0" width="160"></a>
+<br>
+<br>
+<br>
+
+<b><u>文字をリンクにする（新しいウィンドウを開く）</u></b>
+<br>
+文字をクリックすると、別のページを新しいウィンドウで開く。
+<br><br>
+&lt;a href="リンク先のアドレス" target="_blank"&gt;
+<a href="./sample.html" target="_blank">サンプルページ</a>
+&lt;/a&gt;
+<br>
+<br>
+<br>
+
+<b><u>画像をリンクにする（新しいウィンドウを開く）</u></b>
+<br>
+画像をクリックすると、別のページを新しいウィンドウで開く。
+<br><br>
+&lt;a href="リンク先のアドレス" target="_blank"&gt;&lt;img src="画像ファイルのパス" border="0"&gt;&lt;/a&gt;
+<br>
+<a href="./sample.html" target="_blank"><img src="./Image.jpg" border="0" width="160"></a>
+<br>
+<br>
+<br>
+
+<b><u>同じページ内でリンクを張る</u></b>
+<br>
+&lt;a href="#タイトル"&gt;<a href="#タイトル">クリックすると同じページ内のどこかに移動する<a>&lt;/a&gt;
+<br>
+上記のリンクをクリックするとHTMLのコードにおいて、「&lt;a name="タイトル"&gt;」と書かれている部分に移動する。
+<u>例として、このページのタイトル部分（一番上）に移動するように設定した。</u>
+</p>
+
+
+
+<p><table border="5" bordercolor="#66ffff">
+<tr><td><h1>
+<a href="../index.html">
+<font face="MS p明朝">ホーム</font>
+</h1></td></tr></table></a>
+<br>
+</p>
+
+<!--
+<p>
+<marquee behavior="alternate" width="100%" scrollamount="5"></p>
+<table border="0" align="right"><tr><td>
+1枚目：自分で撮った写真。
+<br>
+２枚目：自分で撮った写真。一部加工。
+</td></tr></table></p>
+-->
+
+</font>
+</html>

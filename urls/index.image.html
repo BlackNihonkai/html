@@ -1,0 +1,122 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>画像のタグ</title>
+</head>
+<body bgcolor="#FEC7AD">
+<body alink="#ff0000" vlink="3300cc">
+
+<font face="851手書き雑フォント">
+<!--
+<p><h1>
+<font color="red">
+<div align="center">
+<font face="MS p明朝">文字に修飾をつける</font></font>
+</h1></p>
+-->
+
+<p><table border="7" bordercolor="#0000aa">
+<tr><td>
+<h2><font color="#da00FF">
+<b><font face="MS p明朝">画像を修飾する</font></b>
+</font></h2>
+</td></tr></table>
+</p>
+
+<p><h3>
+<font color="green">
+<em>画像を表示する</em>
+</font></h3>
+「img」タグを使うことで、画像の貼り付けや、画像に関連する設定ができる。
+<br>
+<br>
+「src="画像のパス"」で表示する画像を指定する。
+<br>
+「border="0"」と設定をつけることで、画像だけを張り付けることができる。
+<br>
+<br>
+&lt;img src="画像ファイルのパス" border="0"&gt;
+<br>
+<img src="./Image.jpg" border="0" width="320">
+</p>
+
+<!-- -->
+<br>
+<p><h3>
+<font color="green">
+<em>画像に枠線をつける</em>
+</font></h3>
+前項では「border="0"」にしていたが、「border="数値"」とすることで<u>数値</u>に対応した太さの枠線が描かれる。
+<br>
+<br>
+&lt;img src="画像ファイルのパス" border="2"&gt;
+<br>
+<img src="./Image.jpg" border="2" width="320">
+</p>
+
+<!-- -->
+<br>
+<p><h3>
+<font color="green">
+<em>画像の大きさを指定する</em>
+</font></h3>
+「width="横の大きさ"」と「height="縦の大きさ"」をつけることで、画像の大きさを指定できる。
+<br>
+片方のみだけ指定することで、縦横比を保ったまま大きさを変えてくれる(?)。
+<br>
+<br>
+&lt;img src="画像ファイルのパス" border="0" width="500" height="100"&gt;
+<br>
+<img src="./Image.jpg" border="0" width="500" height="100">
+
+<br>
+&lt;img src="画像ファイルのパス" border="0" width="640"&gt;
+<br>
+<img src="./Image.jpg" border="0" width="640"></p>
+
+
+<!-- -->
+<br>
+<p><h3>
+<font color="green">
+<em>画像の配置を指定する</em>
+</font></h3>
+画像でも、文字と同様にして配置を指定することができる
+<br>
+<br>
+&lt;div align="left"&gt;&lt;img src="画像ファイルのパス" border="0"&gt;&lt;/div&gt;
+<br>
+<div align="left"><img src="./Image.jpg" border="0" width="320"></div>
+<br>
+<br>
+&lt;div align="center"&gt;&lt;img src="画像ファイルのパス" border="0"&gt;&lt;/div&gt;
+<br>
+<div align="center"><img src="./Image.jpg" border="0" width="320"></div>
+<br>
+<br>
+&lt;div align="right"&gt;&lt;img src="画像ファイルのパス" border="0"&gt;&lt;/div&gt;
+<br>
+<div align="right"><img src="./Image.jpg" border="0" width="320"></div>
+</p>
+
+
+<p><table border="5" bordercolor="#66ffff">
+<tr><td><h1>
+<a href="../index.html">
+<font face="MS p明朝">ホーム</font>
+</h1></td></tr></table></a>
+<br>
+</p>
+
+<!--
+<p>
+<marquee behavior="alternate" width="100%" scrollamount="5"></p>
+<table border="0" align="right"><tr><td>
+1枚目：自分で撮った写真。
+<br>
+２枚目：自分で撮った写真。一部加工。
+</td></tr></table></p>
+-->
+
+</font>
+</html>
