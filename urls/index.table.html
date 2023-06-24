@@ -288,7 +288,143 @@
 <table border="1" align="center" width="150" height="100">
 <tr><td> あいうえお </td></tr>
 </table>
+<br><br></p>
 
+
+<!-- -->
+<p><h3>
+<font color="green">
+<div align="center"><em>応用</em></div>
+</font></h3>
+<br>
+
+<div align="center"><b><u>画像の横に文字を入れる</u></b></div>
+<br>
+・<u>表の<b>左側</b>に画像を、表の<b>右側</b>にその説明を書く場合。</u>
+<br><br>
+
+&lt;table border="1" cellpadding="3"&gt;<br>
+&lt;tr&gt;<br>
+&lt;td&gt;&lt;img src="画像ファイル名" border="0"&gt;&lt;/td&gt;<br>
+&lt;td&gt;この文章は、&lt;br&gt;左の画像の説明です。&lt;br&gt;&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;/table&gt;<br>
+
+<br>
+
+<table border="1" cellpadding="3">
+<tr>
+<td><img src="./Image.jpg" border="0" width="150"></td>
+<td>この文章は、<br>左の画像の説明です。<br></td>
+</tr>
+</table>
+
+<br><br>
+
+・<u>表の<b>右側</b>に画像を、表の<b>左側</b>にその説明を書く場合。</u>
+こちらは、表の枠線を消してみた。
+<br><br>
+
+&lt;table border="0" cellpadding="3"&gt;<br>
+&lt;tr&gt;<br>
+&lt;td&gt;この文章は、&lt;br&gt;左の画像の説明です。&lt;br&gt;&lt;/td&gt;<br>
+&lt;td&gt;&lt;img src="画像ファイル名" border="0"&gt;&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;/table&gt;<br>
+
+<br>
+
+<table border="0" cellpadding="3">
+<tr>
+<td>この文章は、<br>左の画像の説明です。<br></td>
+<td><img src="./Image.jpg" border="0" width="150"></td>
+</tr>
+</table>
+
+<br><br>
+
+・<u>画像の上端と説明の上端をそろえて書く場合。</u>
+<br><br>
+
+
+&lt;table border="1" cellpadding="3"&gt;<br>
+&lt;tr&gt;<br>
+&lt;td&gt;&lt;img src="画像ファイル名" border="0"&gt;&lt;/td&gt;<br>
+&lt;td valign="top"&gt;この文章は、&lt;br&gt;左の画像の説明です。&lt;br&gt;&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;/table&gt;<br>
+
+<br>
+
+<table border="1" cellpadding="3">
+<tr>
+<td><img src="./Image.jpg" border="0" width="150"></td>
+<td valign="top">この文章は、<br>左の画像の説明です。<br></td>
+</tr>
+</table>
+
+<br><br>
+
+<div align="center"><b><u>動くタグと組み合わせてみる</u></b></div>
+<br>
+
+<table border="1">
+<tr>
+<td>
+<table border="1" bordercolor="brown"><tr bgcolor="darkgreen">
+<td><marquee direction="up" height="60" width="120" scrollamount="1">
+<font color="white" size="2">黒板です。<br>何か書いて</marquee>
+</font></td></tbody></table>
+</td>
+<td>
+&lt;table border="1" bordercolor="brown"&gt;<br>
+&lt;tr bgcolor="darkgreen"&gt;<br>
+&lt;td&gt;<br>
+&lt;marquee direction="up" height="60" width="120" scrollamount="1"&gt;<br>
+&lt;font color="white" size="2"&gt;黒板です。&lt;br&gt;何か書いて<br>
+&lt;/marquee&gt;<br>
+&lt;/font&gt;&lt;/td&gt;&lt;/tbody&gt;&lt;/table&gt;<br>
+</td>
+</tr>
+
+<tr>
+<td>
+<table border="5" bordercolor="#ff6633"><tr bgcolor="#ffcc33">
+<td><marquee direction="up" height="60" width="120" scrollamount="1">
+<font size="2">111○○さん<br>222○○さん<br>333○○さん<br>444○○さん</marquee>
+</font></td></tbody></table>
+</td>
+<td>
+&lt;table border="5" bordercolor="#ff6633"&gt;&lt;tr bgcolor="#ffcc33"&gt;<br>
+&lt;td&gt;&lt;marquee direction="up" height="60" width="120" scrollamount="1"&gt;<br>
+&lt;font size="2"&gt;<br>
+111○○さん&lt;br&gt;222○○さん&lt;br&gt;333○○さん&lt;br&gt;444○○さん<br>
+&lt;/marquee&gt;<br>
+&lt;/font&gt;&lt;/td&gt;&lt;/tbody&gt;&lt;/table&gt;<br>
+</td>
+</tr>
+</table>
+
+<br><br>
+
+<div align="center"><b><u>メニュー欄を作る</u></b></div>
+<br>
+<br>
+&lt;table border="0" width="100"&gt;<br>
+&lt;tr&gt;&lt;td align="center" bgcolor="#ccffff"&gt;日記&lt;/td&gt;&lt;/tr&gt;<br>
+&lt;tr&gt;&lt;td align="center" bgcolor="#00ff99"&gt;プロフ&lt;/td&gt;&lt;/tr&gt;<br>
+&lt;tr&gt;&lt;td align="center" bgcolor="#ccffff"&gt;掲示板&lt;/td&gt;&lt;/tr&gt;<br>
+&lt;tr&gt;&lt;td align="center" bgcolor="#00ff99"&gt;リンク&lt;/td&gt;&lt;/tr&gt;<br>
+&lt;tr&gt;&lt;td align="center" bgcolor="#ccffff"&gt;TOP&lt;/td&gt;&lt;/tr&gt;<br>
+&lt;/table&gt;<br>
+<br>
+<table border="0" width="100">
+<tr><td align="center" bgcolor="#ccffff">日記</td></tr>
+<tr><td align="center" bgcolor="#00ff99">プロフ</td></tr>
+<tr><td align="center" bgcolor="#ccffff">掲示板</td></tr>
+<tr><td align="center" bgcolor="#00ff99">リンク</td></tr>
+<tr><td align="center" bgcolor="#ccffff"><a href="../index.html">ホーム</a></td></tr>
+</table>
 <br><br></p>
 
 

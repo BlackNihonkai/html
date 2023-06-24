@@ -1,0 +1,203 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>動く文字・画像</title>
+</head>
+<body bgcolor="#FEC7AD">
+<body alink="#ff0000" vlink="#3300cc">
+
+<font face="851手書き雑フォント">
+
+<a name="タイトル">
+<p><div align="center">
+<table border="7" bordercolor="#0000aa">
+<tr><td>
+<h2><font color="#da00FF">
+<font face="MS p明朝"><b>動く文字・画像</b></font>
+</font></h2>
+</td></tr></table></div>
+</p>
+
+<!-- -->
+<p><h3>
+<font color="green">
+<div align="center"><em>文字や画像を動かす</em></div>
+</font></h3>
+「&lt;marquee&gt;」と「&lt;/marquee&gt;」の間に書いたもの（文字や画像）が右から左に動く。
+<br><br>
+<div align="center"><b><u>文字を動かす</u></b></div>
+<br>
+<br>
+<table border="1">
+<tr><td>
+&lt;marquee&gt;o(^^ )o--------⊆^U)┬┬~... &lt;/marquee&gt;
+</td></tr>
+<tr><td>
+<marquee>o(^^ )o--------⊆^U)┬┬~... </marquee>
+</td></tr>
+</table>
+
+<br><br>
+<div align="center"><b><u>画像を動かす</u></b></div>
+<br>
+<br>
+<table border="1">
+<tr><td>
+&lt;marquee&gt;&lt;img src="画像ファイル" border="0"&gt;&lt;/marquee&gt;
+</td></tr>
+<tr><td>
+<marquee><img src="./Image.jpg" border="0" width="100"></marquee>
+</td></tr>
+</table>
+
+</p>
+
+<!-- -->
+<br>
+<p><h3>
+<div align="center"><font color="green">
+<em>横幅と動く速さ</em></div>
+</font></h3>
+
+<div align="center"><b><u>横幅を設定する</u></b></div>
+
+<br><br>
+「marquee」タグの中に「width="<b>数値%</b>"」を書くことで、画面の左から<b>数値%</b>の位置から文字・画像が出現する。
+<br>
+<table border="1">
+<tr><td>
+&lt;marquee width="50%"&gt;widthを50%にしてみた&lt;/marquee&gt;
+</td></tr>
+<tr><td>
+<marquee width="50%">widthを50%にしてみた</marquee>
+</tr></td>
+</table>
+<br><br>
+
+「width="75%"」に設定してみる。
+<br>
+<table border="1">
+<tr><td>
+&lt;marquee width="75%"&gt;wigthを75%にしてみた&lt;/marquee&gt;
+</td></tr>
+<tr><td>
+<marquee width="75%">wigthを75%にしてみた</marquee>
+</tr></td>
+</table>
+<br><br>
+
+<div align="center"><b><u>動く速さを設定する</u></b></div>
+<br><br>
+「marquee」タグの中に「scrollamount="数値"」を書くことで、文字・画像が動く速さを設定できる。
+数値が大きいほど動くスピードが速くなる。
+<br>
+「scrollamount="3"」に設定してみる。
+<br>
+<table border="1">
+<tr><td>
+&lt;marquee scrollamount="3"&gt;scrollamountを<b>3</b>にしてみる&lt;/marquee&gt;
+</td></tr>
+<tr><td>
+<marquee scrollamount="3">scrollamountを<b>3</b>にしてみる</marquee>
+</tr></td>
+</table>
+<br><br>
+
+「scrollamount="10"」に設定してみる。
+<br>
+<table border="1">
+<tr><td>
+&lt;marquee scrollamount="10"&gt;scrollamountを<b>10</b>にしてみる&lt;/marquee&gt;
+</td></tr>
+<tr><td>
+<marquee scrollamount="10">scrollamountを<b>10</b>にしてみる</marquee>
+</tr></td>
+</table>
+<br>
+<br>
+
+
+<div align="center"><b><u>左から右に動かす</u></b></div>
+<br>
+「&lt;marquee&gt;」タグの中に「direction="right"」を書くことで、文字・画像を左から右に動かすことができる。
+<br><br>
+<table border="1">
+<tr><td>
+&lt;marquee direction="right" scrollamount="5"&gt;左→右&lt;/marquee&gt;<br>
+&lt;marquee scrollamount="5"&gt;左←右&lt;/marquee&gt;
+</td></tr>
+<tr><td>
+<marquee direction="right" scrollamount="5">左→右</marquee>
+<marquee scrollamount="5">左←右</marquee>
+</td></tr>
+</table>
+<br>
+<br>
+
+<div align="center"><b><u>文字・画像を最後に止める</u></b></div>
+<br>
+「&lt;marquee&gt;」タグの中に「behavior="slide"」を書くことで、文字・画像を動いた最後に止めることができる。
+<u>ただし、少々わかりにくい。</u>
+<br><br>
+<table border="1">
+<tr><td>
+&lt;marquee behavior="slide" scrollamount="1"&gt;
+動いた後に&lt;br&gt;止まったはず&lt;/marquee&gt;
+</td></tr>
+<tr><td>
+<marquee behavior="slide" scrollamount="1">動いた後に<br>止まったはず</marquee>
+</td></tr>
+</table>
+<br>
+<br>
+
+<div align="center"><b><u>文字・画像を反復横跳びさせる</u></b></div>
+<br>
+「&lt;marquee&gt;」タグの中に「behavior="alternate"」を書くことで、文字・画像を反復横跳びさせることができる。
+<br>
+「width」で動く範囲の横幅を、「scrollamount」で動く速さを設定できる。
+<br><br>
+<table border="1">
+<tr><td>
+&lt;marquee behavior="alternate" width="75%" scrollamount="10"&gt;
+反復横跳びしている&lt;/marquee&gt;
+</td></tr>
+<tr><td>
+<marquee behavior="alternate" width="75%" scrollamount="10">
+反復横跳びしている</marquee>
+</td></tr>
+</table>
+</p>
+
+<p>
+<br><br>
+
+<table border="0" width="100%">
+<tr><td align="center" bgcolor="#ccffff"><a href="./index.letter.html">文字のタグ</td></tr>
+<tr><td align="center" bgcolor="#00ff99"><a href="./index.image.html">画像のタグ</td></tr>
+<tr><td align="center" bgcolor="#ccffff"><a href="./index.url.html">リンクの指定</td></tr>
+<tr><td align="center" bgcolor="#00ff99"><a href="./index.move.html">動く文字画像</td></tr>
+<tr><td align="center" bgcolor="#ccffff"><a href="../index.html">ホーム</a></td></tr>
+</table>
+</p>
+
+<p><table border="5" bordercolor="#66ffff">
+<tr><td><h1>
+<a href="../index.html">
+<font face="MS p明朝">ホーム</font>
+</h1></td></tr></table></a>
+<br>
+</p>
+
+<!--
+<p>
+<marquee behavior="alternate" width="100%" scrollamount="5"></p>
+<table border="0" align="right"><tr><td>
+1枚目：自分で撮った写真。
+<br>
+２枚目：自分で撮った写真。一部加工。
+</td></tr></table></p>
+-->
+
+</font>
+</html>
